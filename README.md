@@ -35,7 +35,7 @@ ment a rendszerer. A tárolás csak ideiglenes, tehát ha nincs elmentve az adat
 ![DPTP System E-Car Charger Monitoring](https://github.com/DPTPSystem/ECarChargerMonitoring/blob/master/images/type2_charger_check_11.jpg "DPTP System E-Car Charger Monitoring")
 
 # Nyáktervek
-A nyáktervek még vasalos kivitelezéshez, egyoldalas áramköri rajzolattal készültek.
+A nyáktervek kétoldalú áramköri rajzolattal készült SMD kivitelben és 0.8mm-es lemezvastagsággal.
 
 ![DPTP System E-Car Charger Monitoring](https://github.com/DPTPSystem/ECarChargerMonitoring/blob/master/images/pcb_1.PNG "DPTP System E-Car Charger Monitoring")
 
