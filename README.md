@@ -7,30 +7,30 @@
 ![DPTP System E-Car Charger Monitoring](https://github.com/DPTPSystem/ECarChargerMonitoring/blob/master/images/type2_charger_check_4.jpg "DPTP System E-Car Charger Monitoring")
 
 # Figyelmeztetés
-A 220v nagyon veszéjes ezért csak akkor kezdj bele ilyen tesztelésbe vagy (lehetőleg még akkor sem) utánépítésbe, ha tudod mit csinálsz. Ez a 
+A 220v nagyon veszélyes ezért csak akkor kezdj bele ilyen tesztelésbe vagy (lehetőleg még akkor sem) utánaépítésbe, ha tudod mit csinálsz. Ez a 
 a projekt mondjuk nem méri az AC vezetéket, de a pilot jelhez feltétlen szükséges a GND vagy is AC esetében a nulla. Ha valami hibásan van bekötve
-vagy csak benézed, nagyon hamar megcsaphat az áram. Fontos, hogy inkább csak nézegesd és ne kezdj el mókolni. Semmilyen felelőséget nem vállalok
-az estleges károkért, egészségúgyi problémákért, amelyet okoz vagy okozhat az utánépítés és felhasználás.
+vagy csak benézed, nagyon hamar megcsaphat az áram. Fontos, hogy inkább csak nézegesd és ne kezdj el mókolni. Semmilyen felelősséget nem vállalok
+az estleges károkért, egészségügyi problémákért, amelyet okoz vagy okozhat az utánaépítés és felhasználás.
 
 # Miért
-Sajnos az elektromos autózásaim kapcsán gyakran merült fel bennem, hogy valóban annyival tölt e az adott normál vagy villám töltő, amennyi azon
+Sajnos az elektromos autózásaim kapcsán gyakran merült fel bennem, hogy valóban annyival tölt e az adott normál vagy villámtöltő, amennyi azon
 fel van tüntetve vagy amennyit a saját mérője mutat. Vannak olyan Type2-es oszlopok, melyeken semmi nem jelzi az aktuális töltési sebességet, csak
 fel van írva az oszlopra, hogy pl. 22kWh-os.
 
 # Célok
-A projekt célja, hogy megfigyeléseket/méréseket végezzek, az utcai elektromos autó töltökön, amelyek Type2-es csatlakozó felülettel vannak ellátva.
+A projekt célja, hogy megfigyeléseket/méréseket végezzek az utcai elektromos autó töltőkön, amelyek Type2-es csatlakozó felülettel vannak ellátva.
 
 # Hardver
-A hardver nagyon egyszerű, összeségében egy egyszerű kiegészítő adapter, amely a feszültségszintet hivatott az ESP32-nek optimális tartományra
-illeszteni. Összesen egy feszültség osztás találató a nyákon, amely megoldja a megfelelő analog szintet, amelyet képesek vagyunk mérni az ESP-el.
-A hardver méri a PWM jelet és a PWM aplitudóját. 
+A hardver nagyon egyszerű, összességében egy egyszerű kiegészítő adapter, amely a feszültségszintet hivatott az ESP32-nek optimális tartományra
+illeszteni. Összesen egy feszültség osztás található a nyákon, amely megoldja a megfelelő analóg szintet, amelyet képesek vagyunk mérni az ESP-el.
+A hardver méri a PWM jelet és a PWM amplitúdóját. 
 
 # Web
 Azért is választottam az ESP32-őt és az arduinót ehhez a projekthez mert elég jól használható, hogy ha valamilyen webszerver vagy internetes 
 hállózathoz akarunk illeszteni valamit. Az elérhető könyvtárak és a kézenfekvő és könnyű beállítások iszonyat energiát takarítanak meg, főként
 ha az ember csak tesztelés céljából akar valamit elkészíteni. Nyilván végleges hardver esetében nem használnék arduinot vagy előre elkészített
-modult. A projektben a mintavételezett adatokat webes felületen tudjuk nyomonkövetni és képesek vagyunk menteni az adatokat, amelyeket folyamatosan
-ment a rendszerer. A tárolás csak ideiglenes, tehát ha nincs elmentve az adatok elvesznek.
+modult. A projektben a mintavételezett adatokat webes felületen tudjuk nyomon követni és képesek vagyunk menteni az adatokat, amelyeket folyamatosan
+ment a rendszer. A tárolás csak ideiglenes, tehát ha nincs elmentve az adatok elvesznek.
 
 ![DPTP System E-Car Charger Monitoring](https://github.com/DPTPSystem/ECarChargerMonitoring/blob/master/images/type2_charger_check_11.jpg "DPTP System E-Car Charger Monitoring")
 
@@ -56,7 +56,7 @@ A nyáktervek kétoldalú áramköri rajzolattal készült SMD kivitelben és 0.
 ![DPTP System E-Car Charger Monitoring](https://github.com/DPTPSystem/ECarChargerMonitoring/blob/master/images/t_6.jpg "DPTP System E-Car Charger Monitoring")
 
 # Működés
-Az eszküzhöz wifin keresztül lehet csatlakozni, ezt követően a fentebb is látható felületet fogjuk kapni, amelyet a böngészőben kell megnyitni.
+Az eszközhöz wifin keresztül lehet csatlakozni, ezt követően a fentebb is látható felületet fogjuk kapni, amelyet a böngészőben kell megnyitni.
 A program automatikusan észlelni fogja a csatlakozást és kiírja a vételezett adatokat.
 ```
   // Auto státuszai
